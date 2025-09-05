@@ -1,9 +1,11 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme { 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --color-bermuda: #78dcca;
 
   @keyframes wiggle {
     0%,
@@ -14,4 +16,26 @@
 
 #toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3
+}
+
+@layer base {
+  h1 {
+    font-size: var(--text-6xl);
+    text-decoration: underline;
+    color: 
+  }
+}
+
+@layer utilities {
+  
+}
+
+@layer components {
+  .grid-card {
+    @apply bg-blue-500 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] rounded-lg overflow-hidden relative hover:scale-95 transition-all duration-500;
+  }
+
+  .grid-item {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-800 group-hover:rotate-12;
+  }
 }
