@@ -1,32 +1,51 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- menggunakan CDN -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <title>Coba Tailwind</title>
 
-    <!-- menggunakan Tailwind CLI -->
-    <link href="../src/output.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- menggunakan CDN -->
-    <!-- <h1 class="text-3xl font-bold">
-      Hello guys
-    </h1> -->
-    
-    <!-- menggunakan tailwind cli -->
-    <h1 class="text-5xl font-bold text-blue-400">
-      Hello guys
-    </h1> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise Portfolio</title>
 
-    <a href="#" class="bg-green-500 hover:bg-green-700 p-3 text-white inline-block m-3 rounded shadow">
-      ini tombol
-    </a>
+  <link href="../src/output.css" rel="stylesheet">
+</head>
 
-    <p class="m-4 bg-yellow-200 p-2">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dolorem ipsum dolore, et autem suscipit, error nam itaque neque sint quidem officia est aliquid maiores? Provident quisquam enim nisi maiores!
-    </p>
-  </body>
+<body>
+
+  <!-- Hero Section Start -->
+  <section id="home" class="pt-36">
+    <div class="container md:px-16 mx-auto">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="text-base font-semibold text-primary md:text-xl">Halo Ipsum 👋, Saya <span
+              class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Lorem Ipsum</span></h1>
+          <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Lorem & <span class="text-dark">Ipsum</span></h2>
+          <p class="font-medium text-slate-400 mb-10 leading-relaxed">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, <span
+              class="text-dark font-bold">suscipit!</span>
+          </p>
+
+          <a href="#"
+            class="text-base font-bold bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out text-white">Lorem
+            Ipsum</a>
+        </div>
+
+        <div class="w-full self-end px-4 lg:w-1/2 overflow-hidden md:overflow-visible">
+          <div class="mt-10 relative lg:mt-9 md:right-0">
+            <img src="../src/image/avatar.png" alt="avatar" class="max-1-full mx-auto">
+            <span class="absolute top-20 -z-10 left-1/2 -translate-x-1/2 md:scale-150">
+              <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#14b8a6"
+                  d="M63.9,-19.9C71.2,1.8,57.6,31.2,37,44.7C16.3,58.3,-11.3,56,-31.7,41.6C-52.1,27.3,-65.3,0.9,-58.8,-19.7C-52.3,-40.3,-26.2,-55.1,1.1,-55.4C28.3,-55.8,56.6,-41.7,63.9,-19.9Z"
+                  transform="translate(100 100) scale(1.2)" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+</body>
+
 </html>
