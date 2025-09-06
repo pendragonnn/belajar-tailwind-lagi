@@ -8,6 +8,7 @@
   --color-bermuda: #78dcca;
   --color-primary: var(--color-teal-500);
   --color-dark: var(--color-slate-900);
+  --color-secondary: var(--color-slate-500);
   --breakpoint-2xl: 1320px;
 
   @keyframes wiggle {
