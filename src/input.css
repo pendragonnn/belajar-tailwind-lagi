@@ -31,7 +31,9 @@
 }
 
 @layer utilities {
-  
+  .navbar-fixed {
+    @apply fixed z-10 bg-white opacity-70 backdrop-blur-3xl shadow-lg
+  }
 }
 
 @layer components {
@@ -42,4 +44,21 @@
   .grid-item {
     @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-800 group-hover:rotate-12;
   }
+
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark;
+  }
+
+  .hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+
 }
